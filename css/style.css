@@ -306,6 +306,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 1.11; /* 111.111% */
 letter-spacing: 0.02em;
+text-align: left;
 }
 .stra-p {
 font-size: 16px;
@@ -566,8 +567,6 @@ justify-content: center;
 .ul-icon-footer {
   display: flex;
   gap: 16px;
-  
-  
 }
 .li-icon-footer {
     width: 40px;
@@ -669,6 +668,10 @@ margin: 0 auto;
   margin-left: 16px;
 }
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
   .div-footer{
 max-width: 768px;
 flex-direction: row;
@@ -678,6 +681,7 @@ row-gap: 72px;
 column-gap: 24px;
 margin: 0 auto;
 justify-content: start;
+text-align: left;
 }
 .div-footer-logo {
   align-items: start;
@@ -697,9 +701,13 @@ justify-content: start;
   padding: 0;
   margin: 0;
 }
+.icon-footer-p {
+  justify-content: start;
+}
 .subscribe-p {
   margin: 0;
-  text-align: start;
+  margin-bottom: 16px;
+  text-align: left;
 }
 .div-subscribe {
   padding: 0;
