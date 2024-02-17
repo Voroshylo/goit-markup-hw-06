@@ -227,6 +227,16 @@ align-items: center;
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+(min-resolution: 2dpx) {
+  .sec-first {
+  background-image:
+  linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46,47,66,0.7 )
+  ),
+  url(../images/hero-m.jpg);
+  }
+}
 
 .title {
 font-size: 36px;
@@ -271,6 +281,16 @@ margin-bottom: 72px;
   max-width: 768px;
   height: 436px;
 }
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+(min-resolution: 2dpx) {
+  .sec-first {
+  background-image:
+  linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46,47,66,0.7 )
+  ),
+  url(../images/hero-t-2x.jpg);
+}
+}
 .title {
 font-size: 56px;
 font-style: normal;
@@ -283,6 +303,7 @@ text-align: center;
 padding: 0;
 }
 }
+
 @media screen and (min-width: 1158px) {
     .sec-first {
 padding: 188px 0;
@@ -293,6 +314,16 @@ background-image:
   url(../images/hero.jpg);
   max-width: 1440px;
   height: 600px;
+}
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+(min-resolution: 2dpx) {
+  .sec-first {
+background-image:
+  linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46,47,66,0.7 )
+  ),
+  url(../images/hero-2x.jpg);
+}
 }
 .title {
   max-width: 496px;
