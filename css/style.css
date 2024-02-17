@@ -83,10 +83,8 @@ align-items: center;
 .span-nav {
   color: #2e2f42;
 }
-.div-menu {
-  display: none;
-}
 .list {
+  display: none;
 }
 .list-li {
 }
