@@ -59,7 +59,10 @@ body {
 .div-header {
   display: flex;
   max-width: 320px;
+  height: 72px;
   margin: 0 auto;
+  padding-left: 141px;
+  padding-right: 141px;
 }
 .nav {
 background-color:#FFFFFF;
@@ -153,8 +156,7 @@ display: none;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 16px;
-  margin-top: 16px;
+margin: auto;
 }
 .contacts {
   font-size: 16px;
@@ -361,7 +363,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 1.11; /* 111.111% */
 letter-spacing: 0.02em;
-text-align: left;
+
 }
 .stra-p {
 font-size: 16px;
@@ -378,7 +380,12 @@ color:#434455;
   flex-wrap: wrap;
   column-gap: 72px;
   row-gap: 24px;
-  
+  }
+  .stra-h {
+    text-align: left;
+  }
+  .stra-p {
+    width: 356px;
   }
 .li-stra-list {
     width: calc((100% - 72px) / 2);
@@ -441,18 +448,17 @@ padding: 96px 0;
   display: flex;
   flex-direction: column;
   gap: 72px;
+  padding-left: 92px;
+  padding-right: 92px;
 }
 .li-team-list {
   background-color: #ffffff;
 border-radius: 0 0 4px 4px;
-
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-img {
   display: block;
   width: 100%;
-
-  
 }
 .div-team-h-p {
   padding: 32px 0;
@@ -590,6 +596,7 @@ width: calc((100% - 72px) / 4);
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .port-h {
   margin-bottom: 8px;
@@ -813,9 +820,11 @@ text-align: left;
   align-items: start;
 }
 .div-footer-icon {
+  
   align-items: start;
 }
 .form-subscribe {
+  display: flex;
   flex-direction: row;
   justify-content: start;
 }
@@ -835,11 +844,11 @@ text-align: left;
   margin-bottom: 16px;
   text-align: left;
 }
-.div-subscribe {
-  padding: 0;
-}
+
 .subscribe-button {
   margin: 0;
+  max-width: 165px;
+height: 40px;
 }
 }
 
@@ -883,6 +892,9 @@ text-align: left;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 .is-open {
   display: block;
@@ -1073,4 +1085,119 @@ color: #8E8F99;
 .modal-button:hover,
 .modal-button:focus {
   background-color: #404BBF;
+}
+@media screen and (min-width: 768px) {
+.modal {
+  width: 408px;
+  min-height: 584px;
+}
+}
+@media screen and (min-width: 1158px) {
+.modal {
+  width: 408px;
+  min-height: 584px;
+}
+}
+
+/*menu-mobile*/
+.close-button-menu {
+    position: absolute;
+  top:24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+border-radius: 50%;
+border: 1px solid rgba(0, 0, 0, 0.1);
+background-color: #e7e9fc;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-open {
+display: block;
+}
+.menu.is-open .div-menu {
+  opacity: 1;
+}
+.menu.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.div-menu {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%)scale(1);
+background-color: #ffffff;
+width: 320px;
+height: 640px;
+padding: 72px 16px 40px 16px;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 168px;
+}
+.menu-list-li {
+}
+.menu-list-first {
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.11; /* 111.111% */
+letter-spacing: 0.02em;
+color: #2E2F42;
+text-decoration: none;
+}
+.menu-list-first:hover,
+.menu-list-first:focus {
+  color: #404BBF;
+}
+.menu-address {
+}
+.menu-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.menu-contacts {
+  font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.2; /* 120% */
+letter-spacing: 0.02em;
+color: #434455;
+text-decoration: none;
+}
+.menu-contacts:focus,
+.menu-contacts:hover {
+color: #404BBF;
+}
+@media screen and (min-width: 768px) {
+  .menu.is-open {
+    display: none;
+  }
+}
+@media screen and (min-width: 1158px) {
+.menu.is-open {
+  display: none;
+}
 }
