@@ -423,6 +423,7 @@ letter-spacing: 0.4px;
 }
 .stra-p {
   font-weight: 400;
+  width: 100%;
 }
 }
 /*team*/
@@ -774,7 +775,7 @@ color: #ffffff;
 padding: 8px, 16px;
 }
 .subscribe-button {
-max-width: 165px;
+min-width: 165px;
 height: 40px;
 background-color: #4D5AE5;
 font-size: 16px;
@@ -1190,6 +1191,15 @@ text-decoration: none;
 .menu-contacts:focus,
 .menu-contacts:hover {
 color: #404BBF;
+}
+.ul-icon-menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.li-icon-menu {
+  width: 40px;
+  height: 40px;
 }
 @media screen and (min-width: 768px) {
   .menu.is-open {
