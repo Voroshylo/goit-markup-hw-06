@@ -18,4 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.menu a').forEach(link => {
     link.addEventListener('click', closeMenu)
   });
+  function closeMenuKey(key) {
+    if (key.code === 'Escape') {
+      closeMenu()
+    }
+  }
+  document.addEventListener('keydown', closeMenuKey)
 });

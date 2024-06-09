@@ -13,7 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
   openModalBtn.addEventListener('click', openMenu);
   closeModalBtn.addEventListener('click', closeMenu)
 
-  document.querySelectorAll('.backdrop a').forEach(lonk => {
+  document.querySelectorAll('.backdrop a').forEach(link => {
     link.addEventListener('click', closeMenu)
   });
-});
+  window.addEventListener('keydown', openModalKey)
+  function openModalKey(key) {
+    if (key.code === 'Escape') {
+      closeMenu()
+    }
+  }
+  })
